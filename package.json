@@ -1,0 +1,14 @@
+{
+  "name": "photo-library-demo-photoswipe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "photoswipe": "4.1.1"
+  },
+  "author": "Roman Viskin",
+  "license": "MIT"
+}
