@@ -84,9 +84,10 @@ var app = {
 
     var items = library.map(function(libraryItem) {
       return {
-        src: libraryItem.thumbnailURL,
+        src: libraryItem.photoURL,
         w: libraryItem.width,
         h: libraryItem.height,
+        title: libraryItem.fileName,
       };
     });
 
@@ -94,7 +95,12 @@ var app = {
     var options = {
       // optionName: 'option value'
       // for example:
-      index: 0 // start at first slide
+      index: 0, // start at first slide
+      tapToClose: false,
+      clickToCloseNonZoomable: false,
+      pinchToClose: false,
+      closeOnVerticalDrag: false,
+      closeOnScroll: false,
     };
 
     // Initializes and opens PhotoSwipe
